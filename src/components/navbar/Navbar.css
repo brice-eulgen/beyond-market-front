@@ -1,8 +1,10 @@
+/*>-------------------- NAV-LEFT ---------------------<*/
+
 .nav-belt {
 	display: flex;
 	width: 100%;
 	max-width: 100%;
-	height: 60px;
+	height: 10vh;
 	padding: 10px 10px 10px 10px;
 	background: linear-gradient(to right, rgb(240, 53, 252), rgb(124, 19, 161));
 }
@@ -12,15 +14,10 @@
 	flex-direction: row;
 }
 
-.nav-logo {
+.nav-left img {
 	width: 150px;
 	max-width: 200px;
 	object-fit: cover;
-}
-
-.nav-logo:hover {
-	border: 1px solid white;
-	cursor: pointer;
 }
 
 .global-location {
@@ -37,6 +34,12 @@
 	flex-direction: column;
 }
 
+.nav-left img:hover,
+.global-location:hover {
+	border: 1px solid rgb(227, 225, 225);
+	cursor: pointer;
+}
+
 .deliver {
 	font-size: 12px;
 	line-height: 14px;
@@ -50,18 +53,45 @@
 	font-weight: 700;
 }
 
-.global-location:hover {
-	border: 1px solid white;
+/*>-------------------- NAV-FILL ---------------------<*/
+.nav-fill {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 907px;
+	height: 100%;
+}
+
+.nav-fill .nav-search select {
+	width: auto;
+	font-size: 12px;
+	padding: 11px 10px 10px 10px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border-width: 0;
+}
+
+.nav-fill .nav-search input {
+	margin: auto 0;
+	height: 100%;
+	font-size: 14px;
+	padding: 10px 10px 10px 10px;
+	border: none;
+	outline: none;
+}
+
+.nav-fill .nav-search button {
+	height: 40px;
+	padding: 10px 10px 10px 10px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+	outline: none;
+	width: 50px;
+	color: #fff;
+	margin-right: 30px;
 	cursor: pointer;
-}
-
-.nav-search {
-	width: 907px;
-	height: 60px;
-	background: red;
-}
-
-.search-box {
-	width: 907px;
-	height: 60px;
 }
